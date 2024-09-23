@@ -65,6 +65,7 @@ export default function BannerWithText() {
           src="/bannerspektrumhome.png"
           alt="Banner de Spektrum"
           fill
+          quality={100}
           style={{ 
             objectFit: 'cover', 
             objectPosition: 'center top',
