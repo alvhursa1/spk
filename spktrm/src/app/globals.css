@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Broone';
+  src: url('./fonts/Broone.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Light';
+  src: url('./fonts/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.font-broone {
+  font-family: 'Broone', sans-serif;
+}
+
+.font-marcellus {
+  font-family: 'Marcellus', serif;
+}
+
+.font-satoshi-light {
+  font-family: 'Satoshi-Light', sans-serif;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-white * {
+  background-color: white !important;
+}
