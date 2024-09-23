@@ -33,7 +33,7 @@ const Htext1: React.FC = () => {
       const showNextLine = (index: number) => {
         if (index < lines.length + paragraph2Lines.length) {
           setVisibleLines(prev => [...prev, index])
-          timeout = setTimeout(() => showNextLine(index + 1), 600)
+          timeout = setTimeout(() => showNextLine(index + 1), 400)
         }
       }
       showNextLine(0)
@@ -41,7 +41,7 @@ const Htext1: React.FC = () => {
       setVisibleLines([])
     }
     return () => clearTimeout(timeout)
-  }, [inView])
+  }, [inView, lines.length, paragraph2Lines.length]) // Incluye las dependencias faltantes
 
   return (
     <div ref={ref} className="relative">

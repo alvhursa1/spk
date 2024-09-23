@@ -2,6 +2,7 @@ import Hder from '../components/Hder'
 import BannerWithText from '@/components/BannerWithText'
 import Htext1 from '@/components/Htext1'
 import GaleryMans from '@/components/GaleryMans'
+import MasonryGallery from '@/components/MasonryGallery'
 
 export default function Home() {
   return (
@@ -13,9 +14,12 @@ export default function Home() {
       <div className="relative z-20">
         <Htext1 />
       </div>
-      <div className="min-h-screen relative">
+      <div>
       {}
       <GaleryMans />
+    </div>
+    <div>
+      <MasonryGallery />
     </div>
     </div>
   )
